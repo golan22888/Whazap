@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/msgBubble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textAlignment="gravity"
+        android:background="#00ffff">
+
+        <TextView
+            android:id="@+id/ChannelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="senderName"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/lastMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#00f"
+            android:text="don't have new messages"
+            app:layout_constraintTop_toBottomOf="@id/ChannelName"
+            />
+        <ImageView
+            android:id="@+id/pictureInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ChannelName"
+            android:maxHeight="350dp"
+            android:maxWidth="280dp"
+            android:adjustViewBounds="true"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
