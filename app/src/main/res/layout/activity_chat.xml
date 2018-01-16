@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+
+    <LinearLayout
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/chatText"
+            android:layout_weight="8"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:background="@drawable/edit_text_shape"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/attachment"
+            android:onClick="attach"
+            />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/send_button"
+            android:onClick="sendMsg" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/editText">
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/msgBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_bubble_left">
+
+        <TextView
+            android:id="@+id/senderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="senderName"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="00:00"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/senderName" />
+
+        <TextView
+            android:id="@+id/msgContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/hour"
+            />
+        <ImageView
+            android:id="@+id/pictureInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/hour"
+            android:maxHeight="350dp"
+            android:maxWidth="280dp"
+            android:adjustViewBounds="true"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

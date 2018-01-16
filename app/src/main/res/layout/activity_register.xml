@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/chat_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Registration"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Email:"
+            android:textSize="25sp"
+            android:gravity="bottom"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:hint="username@mail.com"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="name:"
+            android:textSize="25sp"
+            android:gravity="bottom"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="that is how others will see you"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="password:"
+            android:textSize="25sp"
+            android:gravity="bottom"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="password:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/passwordTextConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="confirmation"
+            android:inputType="textPassword"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.5"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_gravity="center"
+        android:onClick="register"
+        />
+</LinearLayout>

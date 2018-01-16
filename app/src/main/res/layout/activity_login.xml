@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@drawable/chat_background">
+    <TextView
+        android:layout_height="0sp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="login"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="name:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/nameID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.85"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="password:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/passID"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.5"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="moveToRegistration"
+            android:text="registration" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="login"
+            android:text="log in" />
+    </RelativeLayout>
+
+
+</LinearLayout>
